@@ -66,7 +66,7 @@ class App extends Component {
       isHidden: false
     })
 
-    handleInterval = setInterval(this.getData, 1000);
+    handleInterval = setInterval(this.getData, 300);
   }
 
   stop = () => {
@@ -91,7 +91,7 @@ class App extends Component {
     const json = {
       "name": this.state.name,
       "timestamp": Date.now(),
-      "value": {
+      "data": {
         "x": this.state.x,
         "y": this.state.y,
         "z": this.state.z
